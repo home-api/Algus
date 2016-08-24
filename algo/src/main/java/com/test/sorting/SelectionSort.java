@@ -5,7 +5,7 @@ import com.test.util.Util;
 public class SelectionSort extends BaseSorting {
 
     public static void main(String[] args) {
-        new SelectionSort(ARRAY_SIZE_DEAULT, MAX_ARRAY_INT_DEFAULT).sort();
+        new SelectionSort(ARRAY_SIZE_DEFAULT, MAX_ARRAY_INT_DEFAULT).sort();
     }
 
     private SelectionSort(int arraySize, int maxArrayInt) {
@@ -18,6 +18,7 @@ public class SelectionSort extends BaseSorting {
             addLoop();
             int smallestIndex = i;
             smallestIndex = getSmallestIndex(array, i, smallestIndex);
+            addSwap();
             Util.swap(array, i, smallestIndex);
         }
     }
@@ -26,7 +27,6 @@ public class SelectionSort extends BaseSorting {
         for (int k = i + 1; k < array.length; k++) {
             addComparison();
             if (array[k] < array[smallestIndex]) {
-                addSwap();
                 smallestIndex = k;
             }
         }

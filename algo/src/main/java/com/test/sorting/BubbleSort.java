@@ -5,7 +5,7 @@ import com.test.util.Util;
 public class BubbleSort extends BaseSorting {
 
     public static void main(String[] args) {
-        new BubbleSort(ARRAY_SIZE_DEAULT, MAX_ARRAY_INT_DEFAULT).sort();
+        new BubbleSort(ARRAY_SIZE_DEFAULT, MAX_ARRAY_INT_DEFAULT).sort();
     }
 
     private BubbleSort(int arraySize, int maxArrayInt) {

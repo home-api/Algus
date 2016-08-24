@@ -3,13 +3,14 @@ package com.test.sorting;
 public class InsertionSort extends BaseSorting {
 
     public static void main(String[] args) {
-        new InsertionSort(ARRAY_SIZE_DEAULT, MAX_ARRAY_INT_DEFAULT).sort();
+        new InsertionSort(ARRAY_SIZE_DEFAULT, MAX_ARRAY_INT_DEFAULT).sort();
     }
 
     private InsertionSort(int arraySize, int maxArrayInt) {
         super(arraySize, maxArrayInt);
     }
 
+    @Override
     protected void arraySort(int[] array) {
         for (int i = 1; i < array.length; i++) {
             addLoop();
