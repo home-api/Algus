@@ -1,4 +1,4 @@
 package com.test.data;
 
-public class BaseData {
+public class Dequeue {
 }
